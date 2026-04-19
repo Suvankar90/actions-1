@@ -8,9 +8,9 @@ jobs:
         steps:
         - name: checkout repo
           uses: actions/checkout@v6
-        - name: Install cosway program
-          run: sudo apt-get install cosway -y
-        - name: Execute cosway CMD
+        - name: Install cowsay program
+          run: sudo apt-get install cowsay -y
+        - name: Execute cowsay CMD
           run: cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
         - name: TEST file exist
           run: grep -i "dragon" dragon.txt
